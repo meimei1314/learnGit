@@ -1,0 +1,150 @@
+/*整体*/
+.footer{
+	min-width:1000px;
+	border-top:1px solid #e4e4e4;
+	background-color:#fff;
+	margin-top:50px;
+}
+
+/*上部分内容*/
+.f-top{
+	background-color:#fff;
+	width:1000px;
+	height:215px;
+	position:relative;
+	margin:0 auto;
+	border-bottom:1px solid #f5f5f5;
+	padding-left:224px;
+	padding-top:25px;
+}
+.f-top:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+/*左边商标部分*/
+.f-logo{
+	width:160px;
+	position:absolute;
+	left:0;
+	top:25px;
+	display:inline-block;
+}
+.f-logo img{
+	width:109px;
+	height:40px;
+	border:0;
+	vertical-align:middle;
+}
+.f-logo p{
+	color:#999;
+	font-size:12px;
+	margin-top:20px;
+}
+
+/*中间内容部分*/
+.f-top dl{
+	width:135px;
+	color:#808080;
+	float:left;
+}
+.f-top dt{
+	font-size:14px;
+	line-height:30px;
+}
+.f-top dd{
+	font-size:12px;
+	line-height:30px;
+}
+.f-top dd a{
+	color:#999999;
+	text-decoration:none;
+}
+
+/*右边二维码部分*/
+.jk-down{
+	display:inline-block;
+	width:175px;
+	position:absolute;
+	right:0;
+	top:25px;
+	text-align:left;
+}
+.jk-down p{
+	color:#808080;
+	margin-bottom:20px;
+	font-size:14px;
+}
+.jk-down div{
+	display:inline-block;
+	width:140px;
+	height:30px;
+	position:relative;
+	border:1px solid #eeeeee;
+	margin-bottom:10px;
+	line-height:30px;
+	color:#808080;
+	font-size:13px;
+	padding-left:40px;
+	cursor:pointer;
+}
+div.f-iphone{
+	background:url(../images/footer/apple.png) no-repeat 0 0;
+	background-size:30px 30px;
+}
+.jk-down div img{
+	width:115px;
+	height:153px;
+	position:absolute;
+	top:-157px;
+	left:12px;
+	z-index:2;
+	display:none;
+}
+div.f-android{
+	background:url(../images/footer/android.png) no-repeat 0 0;
+	background-size:30px 30px;
+}
+
+/*下部分内容*/
+.f-bottom{
+	width:1000px;
+	margin:0 auto;
+	color:#999;
+	font-size:12px;
+	text-align:center;
+	padding:15px 0;
+	clear:both;
+}
+.f-bottom strong{
+	font-weight:400;
+}
+.f-bottom  a{
+	color:#999;
+	text-decoration:none;
+}
+.weixin{
+	width:20px;
+	height:15px;
+	float:right;
+	background-size:18px 15px !important;
+	background:url(../images/footer/weixin.png) no-repeat 0 0;
+}
+.weibo{
+	width:20px;
+	height:15px;
+	float:right;
+	background:url(../images/footer/weibo.png) no-repeat 0 0;
+	background-size:20px 15px;
+	margin-right:10px;
+}
+.xinyu{
+	display:block;
+	margin:15px auto 0;
+}
+.xinyu img{
+	vertical-align:middle;
+	width:60px;
+	border:0;
+}

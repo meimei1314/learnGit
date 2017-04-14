@@ -1,0 +1,189 @@
+/*reset*/
+*{
+	margin:0;
+	padding:0;
+}
+
+/*舞台效果*/
+body{
+	width:100%;
+	height:100%;
+	background:
+	-webkit-linear-gradient(left, rgba(255,255,255,0.5) 50%, rgba(255,0,0,0.5) 50%),
+	-webkit-linear-gradient(rgba(255,255,255,0.5) 50%, rgba(255,0,0,0.5) 50%);
+	background:
+	-o-linear-gradient(left, rgba(255,255,255,0.5) 50%, rgba(255,0,0,0.5) 50%),
+	-o-linear-gradient(rgba(255,255,255,0.5) 50%, rgba(255,0,0,0.5) 50%);
+	background:
+	linear-gradient(to right, rgba(255,255,255,0.5) 50%, rgba(255,0,0,0.5) 50%),
+	linear-gradient(rgba(255,255,255,0.5) 50%, rgba(255,0,0,0.5) 50%);
+	background-size:200px 200px;
+}
+
+/*3d魔方转换*/
+.cube{
+	-moz-transform-style:preserve-3d;
+	-webkit-transform-style:preserve-3d;
+	-o-transform-style:preserve-3d;
+	-ms-transform-style:preserve-3d;
+	transform-style:preserve-3d;	
+}
+.cube>div{
+	position:absolute;
+	width:180px;
+	height:180px;
+}
+.front{
+	-webkit-transform:translateZ(90px);
+	-moz-transform:translateZ(90px);
+	transform:translateZ(90px);
+}
+.top{
+	-webkit-transform:rotateX(90deg) translateZ(90px);
+	-moz-transform:rotateX(90deg) translateZ(90px);
+	transform:rotateX(90deg) translateZ(90px);
+}
+.left{
+	-webkit-transform:rotateY(90deg) translateZ(-90px);
+	-moz-transform:rotateY(90deg) translateZ(-90px);
+	transform:rotateY(90deg) translateZ(-90px);
+}
+.bottom{
+	-webkit-transform:rotateX(90deg) translateZ(-90px);
+	-moz-transform:rotateX(90deg) translateZ(-90px);
+	transform:rotateX(90deg) translateZ(-90px);
+}
+.right{
+	-webkit-transform:rotateY(90deg) translateZ(90px);
+	-moz-transform:rotateY(90deg) translateZ(90px);
+	transform:rotateY(90deg) translateZ(90px);
+}
+.behind{
+	-webkit-transform:translateZ(-90px);
+	-moz-transform:translateZ(-90px);
+	transform:translateZ(-90px);
+}
+
+/*魔方6个面样式*/
+.cube>div{
+	width:180px;
+	height:180px;
+}
+div.stage div.cube div div{
+	width:58px;
+	height:58px;
+	border:1px solid black;
+	border-radius:4px;
+	float:left;
+}
+.front div{
+	background-color:rgba(254,67,101,1);
+}
+.top div{
+	background-color:rgba(146,58,96,1);
+}
+.left div{
+	background-color:rgba(200,91,146,1);
+}
+.bottom div{
+	background-color:rgba(138,0,46,1);
+}
+.right div{
+	background-color:rgba(255,71,209,1);
+}
+.behind div{
+	background-color:rgba(230,0,92,1);
+}
+
+/*动画效果*/
+.stage{
+	width:180px;
+	height:180px;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style:preserve-3d;
+	-o-transform-style:preserve-3d;
+	-ms-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+	perspective:600px;
+}
+.cube{
+	perspective-origin:center center;
+	-webkit-animation:cube 5s linear,animation 5s linear infinite;
+	-moz-animation:cube 5s linear,animation 5s linear infinite;
+	-o-animation:cube 5s linear,animation 5s linear infinite;
+	-ms-animation:cube 5s linear,animation 5s linear infinite;
+	animation:cube 5s linear,animation 5s linear infinite;
+}
+@-webkit-keyframes cube{
+	0%{
+		width:0px;
+		height:0px;
+	}
+	100%{
+		width:180px;
+		height:180px;
+	}
+}
+@-moz-keyframes cube{
+	0%{
+		width:0px;
+		height:0px;
+	}
+	100%{
+		width:180px;
+		height:180px;
+	}
+}
+@keyframes cube{
+	0%{
+		width:0px;
+		height:0px;
+	}
+	100%{
+		width:180px;
+		height:180px;
+	}
+}
+@-webkit-keyframes animation{
+	from{
+		-webkit-transform:rotateX(0deg) rotateY(0deg);
+		transform:rotateX(0deg) rotateY(0deg);
+	}
+	to{
+		-webkit-transform:rotateX(360deg) rotateY(360deg);
+		transform:rotateX(360deg) rotateY(360deg);
+	}
+}
+@-moz-keyframes animation{
+	from{
+		-moz-transform:rotateX(0deg) rotateY(0deg);
+		transform:rotateX(0deg) rotateY(0deg);
+	}
+	to{
+		-moz-transform:rotateX(360deg) rotateY(360deg);
+		transform:rotateX(360deg) rotateY(360deg);
+	}
+}
+@keyframes ainmation{
+	from{
+		transform:rotateX(0deg) rotateY(0deg);
+	}
+	to{
+		transform:rotateX(360deg) rotateY(360deg);
+	}
+}
+
+/*暂停效果*/
+.cube:hover{
+	-webkit-animation-play-state:paused;
+	-moz-animation-play-state:paused;
+	-o-animation-play-state:paused;
+	-ms-animation-play-state:paused;
+	animation-play-state:paused;
+}
