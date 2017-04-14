@@ -1,0 +1,45 @@
+/*动画效果*/
+div.eye .one{
+	-webkit-animation:smile 2s ease-in-out infinite;
+	-moz-animation:smile 2s ease-in-out infinite;
+	-o-animation:smile 2s ease-in-out infinite;
+	-ms-animation:smile 2s ease-in-out infinite;
+	animation:smile 2s ease-in-out infinite;
+}
+div.eye .two{
+	-webkit-animation:smile 2s ease-in-out infinite;
+	-moz-animation:smile 2s ease-in-out infinite;
+	-o-animation:smile 2s ease-in-out infinite;
+	-ms-animation:smile 2s ease-in-out infinite;
+	animation:smile 2s ease-in-out infinite;	
+}
+@-webkit-keyframes smile{
+	0%{
+		-webkit-transform:scale(1,1);
+		transform:scale(1,1);
+	}
+	100%{
+		-webkit-transform:scale(1,0.2);
+		transform:scale(1,0.2);
+	}
+}
+@-moz-keyframes smile{
+	0%{
+		-webkit-transform:scale(1,1);
+		transform:scale(1,1);
+	}
+	100%{
+		-webkit-transform:scale(1,0.2);
+		transform:scale(1,0.2);
+	}
+}
+@keyframes smile{
+	0%{
+		-webkit-transform:scale(1,1);
+		transform:scale(1,1);
+	}
+	100%{
+		-webkit-transform:scale(1,0.2);
+		transform:scale(1,0.2);
+	}
+}

@@ -1,0 +1,549 @@
+/*reset*/
+*{
+	margin:0;
+	padding:0;
+}
+
+/*背景*/
+.bg{
+	width:900px;
+	height:600px;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+	background:-webkit-radial-gradient(center center,circle,orange,transparent,black);
+	background:-moz-radial-gradient(center center,circle,orange,transparent,black);
+	background:-ms-radial-gradient(center center,circle,orange,transparent,black);
+	background:-o-radial-gradient(center center,circle,orange,transparent,black);
+	background:radial-gradient(center center,circle,orange,transparent,black);
+}
+
+/*仙女效果*/
+div.goddess{
+	width:200px;
+	height:400px;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+}
+
+/*头部*/
+div.head{
+	width:100%;
+	position:relative;
+	z-index:2;
+}
+div.hair{
+	position:relative;
+}
+/*头部盘发样式*/
+div.hair_top{
+	width:200px;
+	margin-left:36px;
+	clear:both;
+}
+div.hair_top .top1{
+	width:56px;
+	height:43px;
+	border:2px solid #532e1b;
+	border-top-left-radius:31px 26px;
+	border-top-right-radius:29px 26px;
+	border-bottom-left-radius:29px 26px;
+	background-color:#ac6a6b;
+	overflow:hidden;
+	position:relative;
+	float:left;
+}
+div.hair_top .top1 div{
+	width:21px;
+	height:13px;
+	border:2px solid #532e1b;
+	border-top-left-radius:13px 9px;
+	border-top-right-radius:10px 9px;
+	border-bottom-left-radius:10px 7px;
+	background-color:#ffffff;
+	position:absolute;
+	top:19px;
+	left:14px;
+}
+div.hair_top .top2{
+	width:56px;
+	height:46px;
+	margin-left:10px;
+	border:2px solid #532e1b;
+	border-top-left-radius:32px 24px;
+	border-top-right-radius:28px 26px;
+	border-bottom-right-radius:27px 21px;
+	background-color:#ac6a6b;
+	overflow:hidden;
+	position:relative;
+	float:left;
+}
+div.hair_top .top2 div{
+	width:26px;
+	height:23px;
+	border:2px solid #532e1b;
+	border-top-left-radius:16px 16px;
+	border-top-right-radius:17px 15px;
+	border-bottom-right-radius:16px 13px;
+	background-color:#ffffff;
+	position:absolute;
+	top:16px;
+	right:13px;
+}
+/*发饰样式*/
+div.headband{
+	width:64px;
+	margin-left:64px;
+	position:absolute;
+	top:20px;
+	clear:both;
+}
+div.headband div{
+	width:12px;
+	height:12px;
+	border:2px solid #000000;
+	border-radius:8px;
+	background-color:#9be3e8;
+	float:left;
+}
+div.headband .two{
+	transform:translateY(-3px);
+}
+div.headband .three{
+	transform:translateY(-3px);
+}
+/*头部发型样式*/
+div.hair_behind{
+	width:196px;
+	height:146px;
+	border:2px solid #532e1b;
+	border-top-left-radius:95px 90px;
+	border-top-right-radius:103px 93px;
+	border-bottom-left-radius:83px 75px;
+	border-bottom-right-radius:83px 75px;
+	background-color:#ac6a6b;
+	position:absolute;
+	top:28px;
+}
+/*刘海样式*/
+div.hair_front{
+	position:absolute;
+	top:80px;
+	left:20px;
+	clear:both;
+	z-index:1;
+}
+div.hair_front .one{
+	width:0px;
+	height:50px;
+	border-right:82px solid #532e1b;
+	border-bottom-right-radius:70px 50px;
+	float:left;
+}
+div.hair_front .one div{
+	width:0px;
+	height:48px;
+	border-right:80px solid #ac6a6b;
+	border-bottom-right-radius:70px 50px;	
+}
+div.hair_front .two{
+	width:0;
+	height:50px;
+	border-left:82px solid #532e1b;
+	border-bottom-left-radius:70px 50px;
+	float:left;
+}
+div.hair_front .two div{
+	width:0;
+	height:48px;
+	border-left:80px solid #ac6a6b;
+	border-bottom-left-radius:70px 50px;
+	float:right;	
+}
+/*耳朵旁边飘逸发型样式*/
+div.hair_bottom{
+	width:100%;
+	position:absolute;
+	top:107px;
+	clear:both;
+	z-index:2;
+}
+div.hair_bottom .one{
+	width:0px;
+	height:138px;
+	border-left:16px solid #532e1b;
+	border-bottom-left-radius:16px 70px;
+	float:left;
+	position:absolute;
+	left:17px;
+}
+div.hair_bottom .one div{
+	width:2px;
+	height:136px;
+	border-left:12px solid #ac6a6b;
+	border-bottom-left-radius:16px 70px;
+	float:right;
+}
+div.hair_bottom .two{
+	width:0px;
+	height:138px;
+	border-right:16px solid #532e1b;
+	border-bottom-right-radius:16px 70px;
+	float:left;
+	position:absolute;
+	right:16px;
+}
+div.hair_bottom .two div{
+	width:2px;
+	height:136px;
+	border-right:12px solid #ac6a6b;
+	border-bottom-right-radius:16px 70px;
+}
+
+/*美貌样式*/
+div.beauty{
+	position:absolute;
+	top:80px;
+}
+/*耳朵样式*/
+div.ear{
+	width:200px;
+	position:absolute;
+	top:58px;
+}
+div.ear .one{
+	width:38px;
+	height:48px;
+	border:2px solid #532e1b;
+	border-top-left-radius:21px 27px;
+	border-bottom-left-radius:24px 28px;
+	background-color:#fcefef;
+	position:absolute;
+	left:5px;
+	margin-top:2px;
+}
+div.ear .two{
+	width:38px;
+	height:48px;
+	border:2px solid #532e1b;
+	border-top-right-radius:21px 20px;
+	border-bottom-right-radius:24px 28px;
+	background-color:#fcefef;
+	position:absolute;
+	right:5px;	
+}
+/*脸部样式*/
+div.face{
+	position:absolute;
+	width:160px;
+	height:136px;
+	border:2px solid #532e1b;
+	border-top-width:0px;
+	border-bottom-left-radius:86px 64px;
+	border-bottom-right-radius:82px 64px;
+	background-color:#fcefef;
+	margin-left:20px;
+	overflow:hidden;
+}
+/*眼睛样式*/
+div.eye{
+	position:absolute;
+	top:68px;
+	width:100%;
+	clear:both;
+	z-index:1;
+}
+div.eye .one{
+	width:24px;
+	height:24px;
+	border-radius:12px;
+	background-color:#532e1b;
+	float:left;
+	position:absolute;
+	left:24px;
+}
+div.eye .two{
+	width:24px;
+	height:24px;
+	border-radius:12px;
+	float:left;
+	background-color:#532e1b;
+	position:absolute;
+	right:24px;
+}
+/*嘴样式*/
+div.mouth{
+	position:absolute;
+	top:80px;
+	left:72px;
+	width:18px;
+	height:16px;
+	border-bottom:3px solid #532e1b;
+	border-radius:16px;
+}
+/*胭脂样式*/
+div.rouge{
+	width:100%;
+	position:absolute;
+	top:80px;
+	left:-8px;
+	clear:both;
+}
+div.rouge .one{
+	width:46px;
+	height:46px;
+	border-radius:23px;
+	background:-moz-radial-gradient(center center,circle,#fbbcbf,transparent);
+	background:-webkit-radial-gradient(center center,circle,#fbbcbf,transparent);
+	background:radial-gradient(center center,circle,#fbbcbf,transparent);
+	float:left;
+}
+div.rouge .two{
+	width:46px;
+	height:46px;
+	border-radius:23px;
+	background:-moz-radial-gradient(center center,circle,#fbbcbf,transparent);
+	background:-webkit-radial-gradient(center center,circle,#fbbcbf,transparent);
+	background:radial-gradient(center center,circle,#fbbcbf,transparent);	
+	float:left;
+	position:absolute;
+	right:-16px;
+}
+
+/*身体*/
+div.body{
+	position:absolute;
+	top:210px;
+	width:100%;
+	z-index:1;
+}
+/*上半身*/
+div.body_top{
+	width:56px;
+	height:0px;
+	border-bottom:83px solid #532e1b;
+	border-left:20px solid transparent;
+	border-right:20px solid transparent;
+	margin-left:54px;
+	z-index:2;
+}
+div.body_top_small{
+	width:52px;
+	height:0px;
+	border-bottom:83px solid #ffd6d0;
+	border-left:20px solid transparent;
+	border-right:20px solid transparent;
+	margin-left:-18px;	
+	position:absolute;
+
+}
+/*领子样式*/
+div.neck{
+	position:absolute;
+	left:15px;
+	clear:both;
+}
+div.neck .one{
+	width:5px;
+	height:24px;
+	background-color:white;
+	border:2px solid #532e1b;
+	transform:rotateZ(-30deg);
+	float:left;
+	margin-right:5px;
+}
+div.neck .two{
+	width:5px;
+	height:24px;
+	background-color:white;
+	border:2px solid #532e1b;
+	transform:rotateZ(30deg);
+	float:left;
+}
+/*裹胸样式*/
+div.heart{
+	position:absolute;
+	top:18px;
+	left:-17px;
+	width:63px;
+	height:0px;
+	border-bottom:50px solid #532e1b;
+	border-left:12px solid transparent;
+	border-right:12px solid transparent;
+}
+div.heart .one{
+	position:absolute;
+	top:2px;
+	left:-10px;
+	width:60px;
+	height:0px;
+	border-bottom:46px solid #ffffff;
+	border-left:11px solid transparent;
+	border-right:11px solid transparent;
+}
+div.heart .one .two{
+	position:absolute;
+	top:7px;
+	left:-11px;
+	width:66px;
+	height:0;
+	border-bottom:32px solid #532e1b;
+	border-left:8px solid transparent;
+	border-right:8px solid transparent;
+}
+div.heart .one .two div{
+	position:absolute;
+	top:2px;
+	left:-7px;
+	width:66px;
+	height:0;
+	border-bottom:28px solid #fdaea2;
+	border-left:7px solid transparent;
+	border-right:7px solid transparent;
+}
+/*下半身样式*/
+div.body_bottom{
+	position:absolute;
+}
+div.body_bottom .body_skirt{
+	position:absolute;
+	left:51px;
+	top:-7px;
+	z-index:2;
+}
+div.body_bottom .body_skirt .left{
+	width:50px;
+	height:32px;
+	background-color:#ffd6d0;
+	border:2px solid #532e1b;
+	border-top-width:0;
+	float:left;
+	transform:rotateZ(17deg);
+}
+div.body_bottom .body_skirt .right{
+	position:absolute;
+	left:54px;
+	width:44px;
+	height:32px;
+	background-color:#ffd6d0;
+	border:2px solid #532e1b;
+	border-top-width:0;
+	float:left;
+	transform:rotateZ(-17deg);
+}
+div.white_skirt{
+	position:absolute;
+	width:90px;
+	height:0;
+	border-bottom:72px solid #532e1b;
+	border-left:12px solid transparent;
+	border-right:12px solid transparent;
+	margin-left:45px;
+	z-index:1;
+}
+div.white_skirt div{
+	width:88px;
+	height:0;
+	border-bottom:70px solid #ffffff;
+	border-left:11px solid transparent;
+	border-right:11px solid transparent;
+	margin-left:-10px;
+}
+/*胳膊样式*/
+div.arm{
+	position:absolute;
+	top:210px;
+}
+div.arm .top{
+	position:absolute;
+
+}
+div.arm .top .left{
+	position:absolute;
+	left:40px;
+	width:60px;
+	height:70px;
+	background-color:#ffd6d0;
+	border:2px solid #532e1b;
+	border-top-left-radius:30px 35px;
+	border-bottom-left-radius:30px 35px;
+}
+div.arm .top .right{
+	position:absolute;
+	left:100px;
+	width:60px;
+	height:70px;
+	background-color:#ffd6d0;
+	border:2px solid #532e1b;
+	border-top-right-radius:30px 35px;
+	border-bottom-right-radius:30px 35px;
+}
+div.arm .bottom{
+	position:absolute;
+	top:26px;
+	z-index:6;
+}
+div.arm .bottom .left{
+	position:absolute;
+	left:50px;
+	width:0;
+	height:37px;
+	border-right:36px solid #532e1b;
+	border-bottom:40px solid transparent;
+}
+div.arm .bottom .left div{
+	position:absolute;
+	top:2px;
+	width:0;
+	height:33px;
+	border-right:34px solid #ffd6d0;
+	border-bottom:38px solid transparent;
+}
+div.arm .bottom .right{
+	position:absolute;
+	left:119px;
+	width:0;
+	height:37px;
+	border-left:36px solid #532e1b;
+	border-bottom:40px solid transparent;
+}
+div.arm .bottom .right div{
+	position:absolute;
+	top:2px;
+	left:-34px;
+	width:0;
+	height:33px;
+	border-left:34px solid #ffd6d0;
+	border-bottom:38px solid transparent;
+}
+/*手部样式*/
+div.hand{
+	position:absolute;
+	top:40px;
+	z-index:5;
+}
+div.hand .left{
+	position:absolute;
+	left:80px;
+	width:8px;
+	height:8px;
+	background-color:#ffefe7;
+	border:2px solid #532e1b;
+	border-radius:5px;
+}
+div.hand .right{
+	position:absolute;
+	left:113px;
+	width:8px;
+	height:8px;
+	background-color:#ffefe7;
+	border:2px solid #532e1b;
+	border-radius:5px;
+}
