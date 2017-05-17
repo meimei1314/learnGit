@@ -486,9 +486,11 @@ img{
 			background-color:@background_color;
 			padding:26px 29px 24px;
 			margin-bottom:10px;
+			position:relative;
 
 			.person{
 				height:57px;
+				position:relative;
 
 				img{
 					display:block;
@@ -511,10 +513,16 @@ img{
 
 				p.one{
 					margin-top:8px;
+					position:absolute;
+					top:0;
+					right:0;
 				}
 
 				p.two{
 					margin-top:10px;
+					position:absolute;
+					right:0;
+					bottom:0;
 				}
 			}
 
@@ -539,6 +547,9 @@ img{
 
 			a.btn:last-child{
 				margin-right:0;
+				position:absolute;
+				bottom:23px;
+				right:28px;
 			}
 		}
 	}
